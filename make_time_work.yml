@@ -1,0 +1,15 @@
+---
+- name: Make time right
+  hosts: localhost #hosts
+  tasks: #tasks - 2 tasks in this playbook
+  - name: Make sure that the package is installed
+    package: #module 1
+      name: ntpd
+      state: present
+
+  - name: Make sure that the service is started
+    service: #module 2
+      name: ntpd
+      status: started
+
+  
