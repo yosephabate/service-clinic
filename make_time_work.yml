@@ -11,5 +11,3 @@
     service: #module 2
       name: ntpd
       status: started
-
-  
